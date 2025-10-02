@@ -2,6 +2,7 @@
 # MeanSparse X-ray TB Classifier — Robustness Evaluation
 
 Short README for the notebook that fine-tunes a **MeanSparse** model on the **tuberculosis-tb-chest-xray-dataset** and evaluates robustness with **PGD** attacks.
+Code and experiments on bone fracture analysis will be added in a future update.
 
 ## Overview
 - **Goal:** Detect Tuberculosis (TB) from chest X-rays and assess adversarial robustness.  
