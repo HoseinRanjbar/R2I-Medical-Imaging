@@ -13,7 +13,6 @@ Code and experiments on bone fracture analysis will be added in a future update.
 ## Data
 - **Dataset:** `tuberculosis-tb-chest-xray-dataset` (*TB_Chest_Radiography_Database*).  
 - **Split strategy:** train/val/test with class balancing notes included in the notebook.  
-- **Preprocessing:** basic transforms & resizing to **224×224** (see notebook cells).
 
 ## Training
 - Fine-tune **only the classifier head** on top of a **frozen backbone**.  
