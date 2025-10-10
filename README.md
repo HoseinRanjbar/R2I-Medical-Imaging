@@ -1,26 +1,37 @@
-# R2I-Medical-Imaging
-# MeanSparse X-ray TB Classifier — Robustness Evaluation
+# Interpretable & Robust AI for Medical Imaging — Bone Fracture Classification
 
-Short README for the notebook that fine-tunes a **MeanSparse** model on the **tuberculosis-tb-chest-xray-dataset** and evaluates robustness with **PGD** attacks.
-Code and experiments on bone fracture analysis will be added in a future update.
+This project focuses on **bone fracture classification** with an emphasis on **robustness** and **interpretability**. We fine-tune and evaluate multiple models on the **FracAtlas** dataset and assess adversarial robustness via **ℓ∞ PGD** attacks. We also document a related TB experiment for completeness.
 
 ## Overview
-- **Goal:** Detect Tuberculosis (TB) from chest X-rays and assess adversarial robustness.  
-- **Model:** MeanSparse variant of **WideResNet-94-16** (backbone from the MeanSparse repo) with a 2-class head.  
-- **Task:** Binary classification — *Normal* vs *Tuberculosis*.  
-- **Notebook:** `xai-for-medical-imaging.ipynb`.
+- **Primary task:** Bone fracture detection on radiographs (FracAtlas).
+- **Models analyzed:**
+  - [**MeanSparse**](https://github.com/SPIN-UMass/MeanSparse) (WRN-94-16 backbone with 2-class/ multi-class head)
+  - [**Robust Principles**](https://github.com/poloclub/robust-principles) (robust baseline under evaluation)
+- **Robustness:** Evaluate clean vs. adversarial performance using **PGD**.
+- **Interpretability:** Designed to support XAI analyses (saliency/attribution; see notebook).
 
-## Data
-- **Dataset:** `tuberculosis-tb-chest-xray-dataset` (*TB_Chest_Radiography_Database*).  
-- **Split strategy:** train/val/test with class balancing notes included in the notebook.  
+## Datasets
+- **FracAtlas (current focus):** Train/val/test split with notes on class balance in the notebook.  
+- **TB Chest X-ray (prior experiment):** `tuberculosis-tb-chest-xray-dataset` (*TB_Chest_Radiography_Database*).
 
-## Training
-- Fine-tune **only the classifier head** on top of a **frozen backbone**.  
-- **Optimizer:** Adam &nbsp;&nbsp;|&nbsp;&nbsp; **LR:** `1e-3` &nbsp;&nbsp;|&nbsp;&nbsp; **Epochs:** `30`.  
-- **Loss:** Cross-Entropy with **inverse-frequency class weights** to mitigate class imbalance.  
-- Training/validation loops and checkpoints are implemented in-notebook.
+## Training Setup
+- **Approach:** Fine-tune (typically unfreeze head; optionally partial backbone) on FracAtlas for both **MeanSparse** and **Robust Principles**.
+- **Typical defaults (adjust in notebook):**
+  - Optimizer: **Adam**
+  - LR: `1e-3` (with scheduler optional)
+  - Epochs: `30`
+  - Loss: **Cross-Entropy** with **class weights** if imbalance is present
+- **Artifacts:** In-notebook training/validation loops, metrics logging, and checkpoint saving.
 
-## Robustness (PGD) Evaluation
-- **Attack:** ℓ∞ **PGD** with **ε = 4/255**, **steps = 10**, **α = 1/255**, random start.  
-- Evaluates **clean vs adversarial** accuracy and prints a **classification report** & **confusion matrix** on attacked samples.
+## Robustness Evaluation (PGD)
+- **Attack:** ℓ∞ **PGD** with typical settings (configurable): `ε = 4/255`, `steps = 10`, `α = 1/255`, random start.  
+- **Metrics:** Clean vs. adversarial accuracy, classification report, and confusion matrices on attacked samples.
+
+## Planned Extensions
+- **More robust models:** We plan to analyze additional robust architectures/training schemes (e.g., adversarially-trained baselines, TRADES-style, or other certified/empirical defenses).  
+- **Status:** Code and experiments on additional robust models will be added in upcoming updates.
+
+## Related TB Experiment (for reference)
+- We previously fine-tuned **[MeanSparse](https://github.com/SPIN-UMass/MeanSparse)** on the **tuberculosis-tb-chest-xray-dataset** for **binary TB vs. Normal** classification and evaluated robustness using **ℓ∞ PGD**. Results and setup are summarized in the TB notebook (see `meansparse_model_tuberculosis.ipynb`).
+
 
