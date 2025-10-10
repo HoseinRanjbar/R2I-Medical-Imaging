@@ -27,6 +27,14 @@ This project focuses on **bone fracture classification** with an emphasis on **r
 - **Attack:** ℓ∞ **PGD** with typical settings (configurable): `ε = 4/255`, `steps = 10`, `α = 1/255`, random start.  
 - **Metrics:** Clean vs. adversarial accuracy, classification report, and confusion matrices on attacked samples.
 
+### Robustness Results (FracAtlas)
+
+| Model | Clean Accuracy (%) | PGD \(\ell_\infty\) Accuracy (%) |
+|---|---:|---:|
+| [MeanSparse](https://github.com/SPIN-UMass/MeanSparse) | XX.XX | XX.XX |
+| [Robust_Principle](https://github.com/poloclub/robust-principles) | XX.XX | XX.XX |
+
+
 ## Planned Extensions
 - **More robust models:** We plan to analyze additional robust architectures/training schemes (e.g., adversarially-trained baselines, TRADES-style, or other certified/empirical defenses).  
 - **Status:** Code and experiments on additional robust models will be added in upcoming updates.
