@@ -28,11 +28,10 @@ This project focuses on **bone fracture classification** with an emphasis on **r
 - **Metrics:** Clean vs. adversarial accuracy, classification report, and confusion matrices on attacked samples.
 
 ### Robustness Results (FracAtlas)
-
 | Model | Clean Accuracy (%) | PGD \(\ell_\infty\) Accuracy (%) |
 |---|---:|---:|
-| [MeanSparse](https://github.com/SPIN-UMass/MeanSparse) | XX.XX | XX.XX |
-| [Robust_Principle](https://github.com/poloclub/robust-principles) | XX.XX | XX.XX |
+| [MeanSparse](https://github.com/SPIN-UMass/MeanSparse) | 93.69 | 56.31 |
+| [Robust_Principle](https://github.com/poloclub/robust-principles) | 90.09 | XX.XX |
 
 
 ## Planned Extensions
