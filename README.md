@@ -31,7 +31,7 @@ This project focuses on **bone fracture classification** with an emphasis on **r
 | Model | Clean Accuracy (%) | PGD \(\ell_\infty\) Accuracy (%) |
 |---|---:|---:|
 | [MeanSparse](https://github.com/SPIN-UMass/MeanSparse) | 93.69 | 56.31 |
-| [Robust_Principle](https://github.com/poloclub/robust-principles) | 90.09 | XX.XX |
+| [Robust_Principle](https://github.com/poloclub/robust-principles) | 90.09 | 5.41 |
 
 ## Interpretability
 
