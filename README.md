@@ -33,6 +33,19 @@ This project focuses on **bone fracture classification** with an emphasis on **r
 | [MeanSparse](https://github.com/SPIN-UMass/MeanSparse) | 93.69 | 56.31 |
 | [Robust_Principle](https://github.com/poloclub/robust-principles) | 90.09 | XX.XX |
 
+## Interpretability
+
+We provide **interpretability maps** to explain model decisions on bone fracture classification.  
+Current support focuses on **MeanSparse**; additional models will follow.
+
+- **Methods:** Saliency (gradient-based), **DeepLIFT**, and **Occlusion**.
+- **Notebook:** `notebooks/meansparse_interpretability_map_bone_fracture.ipynb`
+- **Outputs:** Per-image attribution heatmaps and side-by-side overlays (input, attribution, overlay).
+
+### Example (MeanSparse — Interpretability Map on FracAtlas)
+
+<img width="825" height="409" alt="meansparse_interpretability_map_bone_fracture" src="https://github.com/user-attachments/assets/5b7b88e3-a667-45cc-9056-911bdf31c154" />
+
 
 ## Planned Extensions
 - **More robust models:** We plan to analyze additional robust architectures/training schemes (e.g., adversarially-trained baselines, TRADES-style, or other certified/empirical defenses).  
