@@ -56,6 +56,10 @@ This repo contains the medical-imaging experiments from our paper: we fine-tune 
 | Rebuffi et al. [7]  | 10.46 | 35.26 | 55.33 | 1.93  | 10.09 | 22.04 | 2.87 | 11.71 | 22.23 |
 | Standard [31]       | 0.44  | 7.97  | 27.28 | 0.19  | 3.78  | 13.35 | 0.46 | 7.17  | 24.62 |
 
+*Figure:* FracAtlas example with the fracture ROI (red box). The robust model produces tight, fracture-aligned responses across feature maps, while the standard model shows diffuse, background-biased activations.
+
+<img width="2659" height="2462" alt="interpretability_maps" src="https://github.com/user-attachments/assets/901316bd-7206-4c6d-9152-84d373d65775" />
+
 
 > **Interpretability summary:** Robust models exhibit **higher attribution coverage** within fracture regions and maintain focus under attack; the non-robust baseline drifts to background cues.
 
