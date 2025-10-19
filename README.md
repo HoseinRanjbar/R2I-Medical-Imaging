@@ -2,7 +2,7 @@
 
 [![Paper](https://img.shields.io/badge/Paper-PDF-blue.svg)](https://drive.google.com/file/d/12FdN3W_TRrUtb1t0qB0qAq7nW5wP9mhD/view?usp=sharing)  
 
-This repo contains the **medical imaging** experiments from our paper, focusing on **bone fracture classification** ([FracAtlas](https://www.nature.com/articles/s41597-023-02432-4) Dataset) with **adversarial robustness** and **interpretability**.
+This repo contains the medical-imaging experiments from our paper: we fine-tune robust CNNs on FracAtlas to build fracture classifiers that are robust and interpretable, showing a smaller accuracy drop under ℓ∞-PGD and more localized attributions than standard models.
 
 ## What’s in this repo
 - **Task:** Fracture detection on radiographs (**FracAtlas**).
