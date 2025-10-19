@@ -18,9 +18,7 @@ This repo contains the medical-imaging experiments from our paper: we fine-tune 
 | *WideResNet-34-10*
 - *Fixing Data Augmentation to Improve Adversarial Robustness* (Rebuffi et al., 2021) 📄 [paper](https://arxiv.org/abs/2103.01946) | *WideResNet-70-16*
 - *Standardly trained model* (Croce et al., 2020) 📄 [paper](https://arxiv.org/abs/2010.09670) | *WideResNet-28-10*
-- *MeanSparse: Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification* (Amini et al., 2024) 📄 [paper](https://arxiv.org/abs/2406.05927) | *MeanSparse WideResNet-94-16*
-- *Robust Principles: Architectural Design Principles for Adversarially Robust CNNs* (Peng et al., 2023) 📄 [paper](https://arxiv.org/abs/2308.16258) | *RaWideResNet-70-16*
-
+  
 > **Architecture note:** We use the RobustBench implementations/checkpoints for each method.
 
 ## Dataset
@@ -43,7 +41,7 @@ This repo contains the medical-imaging experiments from our paper: we fine-tune 
 | Huang et al., 2021 | 3 | 24 | 75.23 | 42.34 | 32.89 | [ckpt](URL_OR_PATH) |
 | Rade & Moosavi-Dezfooli, ICLR 2022 | 4 | 21 | 96.40 | 59.46 | 36.94 | [ckpt](URL_OR_PATH) |
 | Rebuffi et al., 2021 | 5 | 11 | 95.05 | 53.15 | 41.90 | [ckpt](https://huggingface.co/HosseinRanjbar/XAI-Bone-Fracture-Xray-Robust-Principle-Model/blob/main/best_Rebuffi2021Fixing_106_16_cutmix_ddpm.pth) |
-| Standard | 6 | 99 | 85.59 | 0.00 | 85.59 | [ckpt](URL_OR_PATH) |
+| Standard | 6 | 99 | 85.59 | 0.00 | 85.59 | [ckpt](https://huggingface.co/HosseinRanjbar/XAI-Bone-Fracture-Xray-Robust-Principle-Model/blob/main/standard.pth) |
 
 **Table I.** Attribution Coverage (%) at selected percentiles (5, 25, 50) for six RobustBench models using Saliency Maps (SM), DeepLIFT (DL), and Integrated Gradients (IG).
 
