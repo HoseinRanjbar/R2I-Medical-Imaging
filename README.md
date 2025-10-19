@@ -36,10 +36,10 @@ This repo contains the medical-imaging experiments from our paper: we fine-tune 
 **Table 1. Robustness results of different RobustBench models under PGD attack for the medical imaging task (ϵ = 4/255).**
 | Model | Performance Rank | RobustBench Rank | Test Acc (%) | PGD (4/255) (%) | Δ Acc (%) | Fine-tuned Checkpoint |
 |---|---:|---:|---:|---:|---:|:--:|
-| Chen et al., 2024  | 1 | 38 | 85.14 | 68.92 | 16.22 | [ckpt](URL_OR_PATH) |
-| Zhang et al., 2020 | 2 | 35 | 82.43 | 56.31 | 26.12 | [ckpt](URL_OR_PATH) |
-| Huang et al., 2021 | 3 | 24 | 75.23 | 42.34 | 32.89 | [ckpt](URL_OR_PATH) |
-| Rade & Moosavi-Dezfooli, ICLR 2022 | 4 | 21 | 96.40 | 59.46 | 36.94 | [ckpt](URL_OR_PATH) |
+| Chen et al., 2024  | 1 | 38 | 85.14 | 68.92 | 16.22 | [ckpt](https://huggingface.co/MohammadFazli/xAI-fracture-xray-model/blob/main/best_data_filtering_wrn_34_20.pth) |
+| Zhang et al., 2020 | 2 | 35 | 82.43 | 56.31 | 26.12 | [ckpt](https://huggingface.co/MohammadFazli/xAI-fracture-xray-model/blob/main/best_geometry_aware.pth) |
+| Huang et al., 2021 | 3 | 24 | 75.23 | 42.34 | 32.89 | [ckpt](https://huggingface.co/MohammadFazli/xAI-fracture-xray-model/blob/main/best_wideresnet_34.pth) |
+| Rade & Moosavi-Dezfooli, ICLR 2022 | 4 | 21 | 96.40 | 59.46 | 36.94 | [ckpt](https://huggingface.co/MohammadFazli/xAI-fracture-xray-model/blob/main/best_helper_wrn_34_10.pth) |
 | Rebuffi et al., 2021 | 5 | 11 | 95.05 | 53.15 | 41.90 | [ckpt](https://huggingface.co/HosseinRanjbar/XAI-Bone-Fracture-Xray-Robust-Principle-Model/blob/main/best_Rebuffi2021Fixing_106_16_cutmix_ddpm.pth) |
 | Standard | 6 | 99 | 85.59 | 0.00 | 85.59 | [ckpt](https://huggingface.co/HosseinRanjbar/XAI-Bone-Fracture-Xray-Robust-Principle-Model/blob/main/standard.pth) |
 
