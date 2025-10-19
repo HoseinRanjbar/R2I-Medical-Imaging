@@ -5,7 +5,13 @@ This project focuses on **bone fracture classification** with an emphasis on **r
 ## Overview
 - **Primary task:** Bone fracture detection on radiographs (FracAtlas).
 - **Models analyzed:**
-  - Data filtering for efficient adversarial training. Chen et al. [![Paper](https://img.shields.io/badge/Paper-PDF-blue.svg)](https://www.sciencedirect.com/science/article/pii/S0031320324001456)
+  - *Data Filtering for Efficient Adversarial Training* (Chen et al., 2024) 📄 [paper](https://www.sciencedirect.com/science/article/pii/S0031320324001456) | Architecture: *WideResNet-34-20*
+  - *Geometry-aware Instance-reweighted Adversarial Training* (Zhang et al., 2020) 📄 [paper](https://arxiv.org/abs/2010.01736) | *WideResNet-28-10*
+  - *Exploring Architectural Ingredients of Adversarially Robust Deep Neural Networks* (Huang et al., 2021) 📄 [paper](https://arxiv.org/abs/2110.03825) | *WideResNet-34-R*
+  - *Helper-based Adversarial Training: Reducing Excessive Margin to Achieve a Better Accuracy–Robustness Trade-off* (Rade & Moosavi-Dezfooli, ICLR 2022) 📄 [paper](https://openreview.net/forum?id=Azh9QBQ4tR7)
+ | *WideResNet-34-10*
+  - *Fixing Data Augmentation to Improve Adversarial Robustness* (Rebuffi et al., 2021) 📄 [paper](https://arxiv.org/abs/2103.01946) | *WideResNet-70-16*
+  
   - [**MeanSparse**](https://github.com/SPIN-UMass/MeanSparse) (WRN-94-16 backbone with 2-class/ multi-class head)
   - [**Robust Principles**](https://github.com/poloclub/robust-principles) (robust baseline under evaluation)
 - **Robustness:** Evaluate clean vs. adversarial performance using **PGD**.
