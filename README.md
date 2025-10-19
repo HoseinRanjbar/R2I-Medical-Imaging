@@ -5,6 +5,7 @@ This project focuses on **bone fracture classification** with an emphasis on **r
 ## Overview
 - **Primary task:** Bone fracture detection on radiographs (FracAtlas).
 - **Models analyzed:**
+  -Chen et al. [![Paper](https://img.shields.io/badge/Paper-PDF-blue.svg)](https://www.sciencedirect.com/science/article/pii/S0031320324001456)
   - [**MeanSparse**](https://github.com/SPIN-UMass/MeanSparse) (WRN-94-16 backbone with 2-class/ multi-class head)
   - [**Robust Principles**](https://github.com/poloclub/robust-principles) (robust baseline under evaluation)
 - **Robustness:** Evaluate clean vs. adversarial performance using **PGD**.
