@@ -11,9 +11,10 @@ This project focuses on **bone fracture classification** with an emphasis on **r
   - *Helper-based Adversarial Training: Reducing Excessive Margin to Achieve a Better Accuracy–Robustness Trade-off* (Rade & Moosavi-Dezfooli, ICLR 2022) 📄 [paper](https://openreview.net/forum?id=Azh9QBQ4tR7)
  | *WideResNet-34-10*
   - *Fixing Data Augmentation to Improve Adversarial Robustness* (Rebuffi et al., 2021) 📄 [paper](https://arxiv.org/abs/2103.01946) | *WideResNet-70-16*
+  - *Standardly trained model* (Croce et al., 2020) 📄 [paper](https://arxiv.org/abs/2010.09670) | *WideResNet-28-10*
+  - *MeanSparse: Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification* (Amini et al., 2024) 📄 [paper](https://arxiv.org/abs/2406.05927) | *MeanSparse WideResNet-94-16*
+  - *Robust Principles: Architectural Design Principles for Adversarially Robust CNNs* (Peng et al., 2023) 📄 [paper](https://arxiv.org/abs/2308.16258) | *RaWideResNet-70-16*
   
-  - [**MeanSparse**](https://github.com/SPIN-UMass/MeanSparse) (WRN-94-16 backbone with 2-class/ multi-class head)
-  - [**Robust Principles**](https://github.com/poloclub/robust-principles) (robust baseline under evaluation)
 - **Robustness:** Evaluate clean vs. adversarial performance using **PGD**.
 - **Interpretability:** Designed to support XAI analyses (saliency/attribution; see notebook).
 
