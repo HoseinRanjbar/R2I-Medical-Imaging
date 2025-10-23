@@ -39,7 +39,7 @@ This repo contains the medical-imaging experiments from our paper: we fine-tune 
 | Chen et al., 2024  | 1 | 38 | 85.14 | 68.92 | 16.22 | [ckpt](https://huggingface.co/MohammadFazli/xAI-fracture-xray-model/blob/main/best_data_filtering_wrn_34_20.pth) |
 | Zhang et al., 2020 | 2 | 35 | 82.43 | 56.31 | 26.12 | [ckpt](https://huggingface.co/MohammadFazli/xAI-fracture-xray-model/blob/main/best_geometry_aware.pth) |
 | Huang et al., 2021 | 3 | 24 | 75.23 | 42.34 | 32.89 | [ckpt](https://huggingface.co/MohammadFazli/xAI-fracture-xray-model/blob/main/best_wideresnet_34.pth) |
-| Rade & Moosavi-Dezfooli, ICLR 2022 | 4 | 21 | 96.40 | 59.46 | 36.94 | [ckpt](https://huggingface.co/MohammadFazli/xAI-fracture-xray-model/blob/main/best_helper_wrn_34_10.pth) |
+| Rade & Moosavi-Dezfooli, 2022 | 4 | 21 | 96.40 | 59.46 | 36.94 | [ckpt](https://huggingface.co/MohammadFazli/xAI-fracture-xray-model/blob/main/best_helper_wrn_34_10.pth) |
 | Rebuffi et al., 2021 | 5 | 11 | 95.05 | 53.15 | 41.90 | [ckpt](https://huggingface.co/HosseinRanjbar/XAI-Bone-Fracture-Xray-Robust-Principle-Model/blob/main/best_Rebuffi2021Fixing_106_16_cutmix_ddpm.pth) |
 | Standard | 6 | 99 | 85.59 | 0.00 | 85.59 | [ckpt](https://huggingface.co/HosseinRanjbar/XAI-Bone-Fracture-Xray-Robust-Principle-Model/blob/main/standard.pth) |
 
@@ -47,12 +47,12 @@ This repo contains the medical-imaging experiments from our paper: we fine-tune 
 
 | Model | SM-5 | SM-25 | SM-50 | DL-5 | DL-25 | DL-50 | IG-5 | IG-25 | IG-50 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Chen et al. [11]    | 24.08 | 68.32 | 86.08 | 10.04 | 36.24 | 53.11 | 7.85 | 23.14 | 37.06 |
-| Zhang et al. [25]   | 16.68 | 64.43 | 87.00 | 8.09  | 30.82 | 52.36 | 5.11 | 18.83 | 30.37 |
-| Huang et al. [10]   | 20.75 | 63.59 | 83.39 | 9.24  | 23.95 | 35.60 | 5.76 | 15.31 | 26.62 |
-| Rade et al. [9]     | 13.74 | 39.78 | 59.40 | 2.61  | 12.58 | 26.69 | 3.80 | 16.47 | 28.91 |
-| Rebuffi et al. [7]  | 10.46 | 35.26 | 55.33 | 1.93  | 10.09 | 22.04 | 2.87 | 11.71 | 22.23 |
-| Standard [31]       | 0.44  | 7.97  | 27.28 | 0.19  | 3.78  | 13.35 | 0.46 | 7.17  | 24.62 |
+| Chen et al., 2024    | 24.08 | 68.32 | 86.08 | 10.04 | 36.24 | 53.11 | 7.85 | 23.14 | 37.06 |
+| Zhang et al. 2020   | 16.68 | 64.43 | 87.00 | 8.09  | 30.82 | 52.36 | 5.11 | 18.83 | 30.37 |
+| Huang et al. 2021   | 20.75 | 63.59 | 83.39 | 9.24  | 23.95 | 35.60 | 5.76 | 15.31 | 26.62 |
+| Rade & Moosavi-Dezfooli, 2022     | 13.74 | 39.78 | 59.40 | 2.61  | 12.58 | 26.69 | 3.80 | 16.47 | 28.91 |
+| Rebuffi et al. 2021  | 10.46 | 35.26 | 55.33 | 1.93  | 10.09 | 22.04 | 2.87 | 11.71 | 22.23 |
+| Standard       | 0.44  | 7.97  | 27.28 | 0.19  | 3.78  | 13.35 | 0.46 | 7.17  | 24.62 |
 
 *Figure:* FracAtlas example with the fracture ROI (red box). The robust model produces tight, fracture-aligned responses across feature maps, while the standard model shows diffuse, background-biased activations.
 
