@@ -1,6 +1,6 @@
 # Interpretable & Robust AI for Medical Imaging — Bone Fracture Classification
 
-[![Paper](https://img.shields.io/badge/Paper-PDF-blue.svg)](https://drive.google.com/file/d/12FdN3W_TRrUtb1t0qB0qAq7nW5wP9mhD/view?usp=sharing)  
+<!-- [![Paper](https://img.shields.io/badge/Paper-PDF-blue.svg)](https://drive.google.com/file/d/12FdN3W_TRrUtb1t0qB0qAq7nW5wP9mhD/view?usp=sharing) --> 
 
 This repo contains the medical-imaging experiments from our paper: we fine-tune robust CNNs on FracAtlas to build fracture classifiers that are robust and interpretable, showing a smaller accuracy drop under ℓ∞-PGD and more localized attributions than standard models.
 
